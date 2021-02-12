@@ -17,7 +17,7 @@ const getRapports = () => {
                                 <div class="infos infos${rapport.id}">
                                     <span>${date.getDate()}/${date.getMonth()}/${date.getFullYear()}</span>
                                     <span>${rapport.bilan}</span>
-                                    <span>${rapport.motif}</span>
+                                    <span>${rapport.motif.substr(0, 20)}...</span>
                                 </div>
                                 <div class="boutons">    
                                     <button class="modifier modifierRapport${rapport.id}"><i class="fas fa-pen"></i></button>
