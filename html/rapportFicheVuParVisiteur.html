@@ -9,7 +9,7 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/rapportRedacteur.css">
+    <link rel="stylesheet" href="../assets/css/rapportFicheVuParVisiteur.css">
 </head>
 <body>
     <header>
@@ -25,10 +25,25 @@
             <h2>Rapport</h2>
         </header>
         <div id="content">
+            <div>
                 <p>Date:</p>
                 <p>Bilan:</p>
+            </div>
+            <div>
                 <p>Motif:</p>
+                
+            </div>
+            <div>
+                <input type="button" id="modifier" value="Modifier">
+                <input type="button" id="supprimer" value="Supprimer"> 
+            </div>
         </div>
     </main>
+    <script>
+        const modifier = document.querySelector("#modifier");
+        modifier.addEventListener("click", () => {
+            
+        });
+    </script>
 </body>
 </html>

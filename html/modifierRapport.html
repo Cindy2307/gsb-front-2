@@ -9,7 +9,7 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/rapports.css">
+    <link rel="stylesheet" href="../assets/css/modifierRapport.css">
 </head>
 <body>
     <header>
@@ -22,20 +22,24 @@
     </header>
     <main>
         <header>
-            <button id="creerRapport">Créer un rapport</button>
-            <h2>Rapports</h2>
-            <div id="RapportById">
-                <select name="idRapport" id="idRapport">
-                    <option value="">Rapport</option>
-                </select>
-                <i id="iconeRechercher" class="fas fa-search"></i>
-            </div>
+            <h2>Modifier le rapport</h2>
         </header>
         <div id="content">
-            <div id="labels">
-                <p>Date</p>
-                <p>Motif</p>
-                <p>Bilan</p>
+                <p>
+                    <label>Date:</label>
+                    <input type="date" id="date">
+                </p>
+                <p>
+                    <label>Bilan:</label>
+                    <input type="text" id="bilan" placeholder="Bilan">
+                </p>
+                <p id="parMotif">
+                    <label>Motif:</label>
+                    <textarea name="motif" id="motif" rows="5" placeholder="Motif"></textarea>
+                </p>
+            <div>
+                <input type="button" id="valider" value="Valider">
+                <input type="button" id="annuler" value="Annuler"> 
             </div>
         </div>
     </main>

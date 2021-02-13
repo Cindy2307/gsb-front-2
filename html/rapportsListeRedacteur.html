@@ -9,7 +9,7 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/visiteur.css">
+    <link rel="stylesheet" href="../assets/css/rapportsListeRedacteur.css">
 </head>
 <body>
     <header>
@@ -22,39 +22,29 @@
     </header>
     <main>
         <header>
-            <h2>Utilisateur</h2>
+            <div id="search">
+                <input type="search" name="motCle" id="motCle" placeholder="Mot clé">
+                <i id="iconeRechercher" class="fas fa-search"></i>
+            </div>
+            <h2>Rapports</h2>
+            <div id="RapportById">
+                <select name="idRapport" id="idRapport">
+                    <option value="">Rapport</option>
+                </select>
+                <i id="iconeRechercher" class="fas fa-search"></i>
+            </div>
         </header>
         <div id="content">
-            <div>
-                <p>Login:</p>
-                <p>Mot de passe:</p>
+            <div id="labels">
+                <p>Date</p>
+                <p>Bilan</p>
+                <p>Motif</p>
             </div>
             <div>
-                <p>Nom:</p>
-                <p>Prénom:</p>
-            </div>
-            <div>
-                <p id="parAdresse">Adresse:</p>
-            </div>
-            <div>
-                <p>Code postal:</p>
-                <p>Ville:</p>
-            </div>
-            <div>
-                <p>Date de naissance:</p>
-                <p>Role de l'utilisateur:</p>
-            </div>
-            <div>
-                <input type="button" id="modifier" value="Modifier">
-                <input type="button" id="supprimer" value="Supprimer"> 
+                <ul id="rapports"></ul>
             </div>
         </div>
     </main>
-    <script>
-        const modifier = document.querySelector("#modifier");
-        modifier.addEventListener("click", () => {
-            
-        });
-    </script>
+    <script src="../assets/js/getRapports.js"></script>
 </body>
 </html>

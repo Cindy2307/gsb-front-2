@@ -9,7 +9,7 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/rapportsRedacteur.css">
+    <link rel="stylesheet" href="../assets/css/rapportFicheVuParRedacteur.css">
 </head>
 <body>
     <header>
@@ -22,29 +22,13 @@
     </header>
     <main>
         <header>
-            <div id="search">
-                <input type="search" name="motCle" id="motCle" placeholder="Mot clé">
-                <i id="iconeRechercher" class="fas fa-search"></i>
-            </div>
-            <h2>Rapports</h2>
-            <div id="RapportById">
-                <select name="idRapport" id="idRapport">
-                    <option value="">Rapport</option>
-                </select>
-                <i id="iconeRechercher" class="fas fa-search"></i>
-            </div>
+            <h2>Rapport</h2>
         </header>
         <div id="content">
-            <div id="labels">
-                <p>Date</p>
-                <p>Bilan</p>
-                <p>Motif</p>
-            </div>
-            <div>
-                <ul id="rapports"></ul>
-            </div>
+                <p>Date:</p>
+                <p>Bilan:</p>
+                <p>Motif:</p>
         </div>
     </main>
-    <script src="../assets/js/getRapports.js"></script>
 </body>
 </html>

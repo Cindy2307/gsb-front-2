@@ -9,7 +9,7 @@
     integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="stylesheet" href="../assets/css/header.css">
-    <link rel="stylesheet" href="../assets/css/visiteurs.css">
+    <link rel="stylesheet" href="../assets/css/rapportsListe.css">
 </head>
 <body>
     <header>
@@ -22,26 +22,22 @@
     </header>
     <main>
         <header>
-            <button id="creerUtilisateur">Créer un utilisateur</button>
-            <h2>Utilisateurs</h2>
-            <div id="visiteurById">
-                <select name="idUtilisateur" id="idUtilisateur">
-                    <option value="">Utilisateur</option>
+            <button id="creerRapport">Créer un rapport</button>
+            <h2>Rapports</h2>
+            <div id="RapportById">
+                <select name="idRapport" id="idRapport">
+                    <option value="">Rapport</option>
                 </select>
                 <i id="iconeRechercher" class="fas fa-search"></i>
             </div>
         </header>
         <div id="content">
             <div id="labels">
-                <p>Nom</p>
-                <p>Prénom</p>
-                <p>Role</p>
-            </div>
-            <div>
-                <ul id="visiteurs"></ul>
+                <p>Date</p>
+                <p>Motif</p>
+                <p>Bilan</p>
             </div>
         </div>
     </main>
-    <script src="../assets/js/getVisiteurs.js"></script>
 </body>
 </html>
