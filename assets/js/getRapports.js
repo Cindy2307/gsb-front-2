@@ -1,16 +1,23 @@
 const rapports = document.querySelector("#rapports");
 
-const getRapports = () => {
+async function getRapports() {
     const url = 'http://localhost:3000/gsb/rapport';
+    let response = "";
 
-    fetch(url)
-    .then(response => response.json())
-        .then((data) => {
-        for (const rapport of data) {
-            const date = new Date(rapport.date);
-            
-            rapports.insertAdjacentHTML('beforeEnd',
-                `
+    const responseJson = await fetch(url)
+        .catch((error) => {
+            console.log(`Voici mon erreur ${error}`);
+        });
+
+    if (responseJson.status === 200) {
+        response = await responseJson.json();
+    }
+
+    for (const rapport of response) {
+        const date = new Date(rapport.date);
+
+        rapports.insertAdjacentHTML('beforeEnd',
+            `
                     <li>
                         <div class="card rapport${rapport.id}">
                             <div class="card-body">
@@ -27,16 +34,12 @@ const getRapports = () => {
                         </div>
                     </li>
                 `
-            );
+        );
 
-            if (data.indexOf(rapport) < data.length - 1) {
-                document.querySelector(`.rapport${rapport.id}`).style.marginBottom = "0.3%";
-            }
+        if (response.indexOf(rapport) < response.length - 1) {
+            document.querySelector(`.rapport${rapport.id}`).style.marginBottom = "0.3%";
         }
-    })
-    .catch((error) => {
-        console.log(`Voici mon erreur ${error}`);
-    });
+    }
 }
 
 getRapports();

@@ -2,16 +2,22 @@ const visiteurs = document.querySelector("#visiteurs");
 let visiteurDelete = "";
 let updateId = "";
 
-const getVisiteurs = () => {
+async function getVisiteurs() {
     const url = 'http://localhost:3000/gsb/visiteur';
-    fetch(url)
-    .then(response => response.json())
-        .then((data) => {
-        for (const visiteur of data) {
-            const date = new Date(visiteur.dateEmbauche);
-            const mois = ["Janvier", "Février", "Mars", "Avril", "Mai", "Juin", "Juillet", "Août", "Septembre", "Octobre", "Novembre", "Décembre"];
-            visiteurs.insertAdjacentHTML('beforeEnd',
-                `
+    let response = "";
+
+    const responseJson = await fetch(url)
+        .catch((error) => {
+            console.log(`Voici mon erreur ${error}`);
+        });
+
+    if (responseJson.status === 200) {
+        response = await responseJson.json();
+    }
+
+    for (const visiteur of response) {
+        visiteurs.insertAdjacentHTML('beforeEnd',
+            `
                     <li>
                         <div class="card visiteur${visiteur.id}">
                             <div class="card-body">
@@ -26,16 +32,12 @@ const getVisiteurs = () => {
                         </div>
                     </li>
                 `
-            );
-            
-            if (data.indexOf(visiteur) < data.length - 1) {
-                document.querySelector(`.visiteur${visiteur.id}`).style.marginBottom = "0.3%";
-            }
+        );
+
+        if (response.indexOf(visiteur) < response.length - 1) {
+            document.querySelector(`.visiteur${visiteur.id}`).style.marginBottom = "0.3%";
         }
-    })
-    .catch((error) => {
-        console.log(`Voici mon erreur ${error}`);
-    });
+    }
 }
 
 getVisiteurs();

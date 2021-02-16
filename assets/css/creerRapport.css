@@ -32,7 +32,7 @@ main header {
     justify-content: space-evenly;
 }
 
-#parMotif {
+#content p {
     display: flex;
     flex-direction: column;
 }
