@@ -23,12 +23,8 @@ async function getRapports() {
                             <div class="card-body">
                                 <div class="infos infos${rapport.id}">
                                     <span>${date.getDate()}/${date.getMonth()}/${date.getFullYear()}</span>
-                                    <span>${rapport.bilan}</span>
                                     <span>${rapport.motif.substr(0, 20)}...</span>
-                                </div>
-                                <div class="boutons">    
-                                    <button class="modifier modifierRapport${rapport.id}"><i class="fas fa-pen"></i></button>
-                                    <button class="supprimer supprimerRapport${rapport.id}"><i class="fas fa-trash-alt"></i></button>
+                                    <span>${rapport.bilan.substr(0, 20)}...</span>
                                 </div>
                             </div>
                         </div>
@@ -43,3 +39,4 @@ async function getRapports() {
 }
 
 getRapports();
+

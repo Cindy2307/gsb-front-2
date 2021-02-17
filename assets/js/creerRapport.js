@@ -1,9 +1,14 @@
 const bilan = document.querySelector("#bilan");
 const motif = document.querySelector("#motif");
 const form = document.querySelector("form");
+const logo = document.querySelector("#logo");
 
-async function createRapport(e) {
+logo.addEventListener("click", (e) => {
     e.preventDefault();
+    document.location.href = "../html/rapportsListe.html";
+});
+
+async function createRapport() {
     const url = `http://localhost:3000/gsb/visiteur/3/rapport`;
     let response = "";
     const formData = new FormData(form);
@@ -16,7 +21,7 @@ async function createRapport(e) {
     const responseJson = await fetch(url, {
         method: "POST",
         headers: {
-            "Content-Type" : "application/json"
+            "Content-Type": "application/json"
         },
         body: JSON.stringify(object)
     })
@@ -31,5 +36,8 @@ async function createRapport(e) {
     }
 }
 
-form.addEventListener("submit", createRapport);
+form.addEventListener("submit", (e) => {
+    e.preventDefault();
+    createRapport();
+});
 

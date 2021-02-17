@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <img src="../assets/img/logo-gsb.png" alt="">
+        <img src="../assets/img/logo-gsb.png" id="logo" alt="logo">
         <h1>Galaxy Swiss Bourdin</h1>
         <div id="connexion">
             <p id="pseudo">Pseudo</p>
@@ -26,12 +26,9 @@
         </header>
         <div id="content">
             <div>
-                <p>Date:</p>
-                <p>Bilan:</p>
-            </div>
-            <div>
-                <p>Motif:</p>
-                
+                <p>Date: <span id="date"></span></p>
+                <p>Motif: <span id="motif"></span></p>
+                <p>Bilan: <span id="bilan"></span></p>
             </div>
             <div>
                 <input type="button" id="modifier" value="Modifier">
@@ -39,6 +36,8 @@
             </div>
         </div>
     </main>
+    <script src="../assets/js/rapportFicheVuParVisiteur.js"></script>
+    <script src="../assets/js/supprimerRapport.js"></script>
     <script>
         const modifier = document.querySelector("#modifier");
         modifier.addEventListener("click", () => {

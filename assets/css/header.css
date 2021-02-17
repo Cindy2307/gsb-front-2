@@ -40,6 +40,10 @@ h1 {
     cursor: pointer;
 }
 
+#logo {
+    cursor: pointer;
+}
+
 @media screen and (max-width:1200px) {
     h1 {
         font-size: 25px;

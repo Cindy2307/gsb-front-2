@@ -13,7 +13,7 @@
 </head>
 <body>
     <header>
-        <img src="../assets/img/logo-gsb.png" alt="">
+        <img src="../assets/img/logo-gsb.png" id="logo" alt="logo">
         <h1>Galaxy Swiss Bourdin</h1>
         <div id="connexion">
             <p id="pseudo">Pseudo</p>
@@ -25,23 +25,22 @@
             <h2>Modifier le rapport</h2>
         </header>
         <div id="content">
-                <p>
-                    <label>Date:</label>
-                    <input type="date" id="date">
-                </p>
+            <form>
                 <p>
                     <label>Bilan:</label>
-                    <input type="text" id="bilan" placeholder="Bilan">
+                    <textarea name="bilan" id="bilan" rows="5" placeholder="Bilan"></textarea>
                 </p>
-                <p id="parMotif">
+                <p>
                     <label>Motif:</label>
                     <textarea name="motif" id="motif" rows="5" placeholder="Motif"></textarea>
                 </p>
-            <div>
-                <input type="button" id="valider" value="Valider">
-                <input type="button" id="annuler" value="Annuler"> 
-            </div>
+                <div>
+                    <input type="submit" id="valider" value="Valider">
+                    <input type="button" id="annuler" value="Annuler"> 
+                </div>
+            </form>
         </div>
     </main>
+    <script src="../assets/js/modifierRapport.js"></script>
 </body>
 </html>

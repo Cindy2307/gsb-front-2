@@ -40,3 +40,7 @@ main header {
 #supprimer {
     width: 49%;
 }
+
+span {
+    font-weight: normal;
+}
