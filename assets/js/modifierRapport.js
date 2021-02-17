@@ -6,6 +6,7 @@ const logo = document.querySelector("#logo");
 
 bilan.insertAdjacentHTML("beforeend", sessionStorage.getItem("bilan"));
 motif.insertAdjacentHTML("beforeend", sessionStorage.getItem("motif"));
+
 annuler.addEventListener("click", (e) => {
     document.location.href = "../html/rapportsListe.html"
 });
