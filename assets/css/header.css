@@ -44,6 +44,13 @@ h1 {
     cursor: pointer;
 }
 
+input:focus,
+textarea:focus,
+button:focus,
+select:focus{
+    outline: 0;
+}
+
 @media screen and (max-width:1200px) {
     h1 {
         font-size: 25px;
