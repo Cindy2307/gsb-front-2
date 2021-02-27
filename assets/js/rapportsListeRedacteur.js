@@ -1,4 +1,6 @@
 const rapports = document.querySelector("#rapports");
+const liste = document.querySelector("#idRapport");
+let rapportId;
 
 async function getRapports() {
     const url = 'http://localhost:3000/gsb/rapport';
@@ -31,6 +33,14 @@ async function getRapports() {
                     </li>
                 `
         );
+
+        let rapportFiche = document.querySelector(`.infos${rapport.id}`);
+
+        rapportFiche.addEventListener("click", (e) => {
+            e.preventDefault();
+            sessionStorage.setItem("rapportId", rapport.id);
+            document.location.href = "../html/rapportFicheVuParRedacteur.html";
+        })
 
         if (response.indexOf(rapport) < response.length - 1) {
             document.querySelector(`.rapport${rapport.id}`).style.marginBottom = "0.3%";

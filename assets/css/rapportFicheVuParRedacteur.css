@@ -26,3 +26,7 @@ main header {
     border-radius: 0 0 5px 5px;
     font-weight: bold;
 }
+
+span {
+    font-weight: normal;
+}
