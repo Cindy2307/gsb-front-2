@@ -13,10 +13,6 @@ main {
     height: 90vh;
 }
 
-.fa-lock {
-    height: 2vh;
-}
-
 .input-group-text {
     border-radius: 2px 0 0 2px;
 }
@@ -27,5 +23,4 @@ main {
 
 .login-form-1 {
     background-color: rgba(0, 0, 0, 0.37);
-    padding: 2% 5%;
 }
