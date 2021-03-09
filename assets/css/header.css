@@ -19,11 +19,11 @@ h1 {
 }
 
 #connexion {
-    width: 10%;
+    width: 3%;
     display: flex;
     align-items: center;
     border: 5px double rgb(52, 122, 252);
-    height: 10vh;
+    height: 5vh;
     justify-content: space-around;
 }
 
