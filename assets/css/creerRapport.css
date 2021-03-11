@@ -6,12 +6,11 @@ body {
     margin: 0;
     background: url(../img/fond.jpg);
     background-size: cover;
-    height: 100vh;
 }
 
 main {
     width: 80%;
-    height: 80vh;
+    height: 90vh;
 }
 
 
