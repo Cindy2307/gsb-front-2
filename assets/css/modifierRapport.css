@@ -1,43 +1,23 @@
+img{
+    width: 3%;
+}
+
 body {
     margin: 0;
     background: url(../img/fond.jpg);
     background-size: cover;
-    height: 100vh;
 }
 
 main {
-    width: 40%;
-    height: 75vh;
-    margin: 3% auto;
+    width: 80%;
+    height: 90vh;
+
 }
 
-main header {
-    display: flex;
-    justify-content: center;
-    padding: 1%;
-    background-color: rgb(52, 82, 252);
-    color: white;
-    border-radius: 5px 5px 0 0;
+.login-form-1 {
+    background-color: rgba(0, 0, 0, 0.37);
 }
 
-#content {
-    background-color: rgb(207, 207, 207);
-    padding: 5% 5%;
-    height: fit-content;
-    border-radius: 0 0 5px 5px;
-}
-
-#content div {
-    display: flex;
-    justify-content: space-evenly;
-}
-
-#content p {
-    display: flex;
-    flex-direction: column;
-}
-
-#valider,
-#annuler {
+button{
     width: 40%;
 }
