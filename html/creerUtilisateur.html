@@ -26,52 +26,50 @@
                 <div class="col-3"></div>
                 <div class="col-6 login-form-1 center px-5 py-4">
                     <h3 class="text-center text-white mb-5">Créer un utilisateur</h3>
-                    <form>
-                        <div class="form-group d-flex flex-row">
-                            <div >
+                    <form class= "row">
+                        <div class="form-group row">
+                            <div class="col-6">
                                 <label class="text-white">Login:</label>
-                                <input type="text" name ="login" id="login" placeholder="Login">  
-                                    
+                                <input type="text" name ="login" id="login" placeholder="Login">    
                             </div>
-                            <div>
+                            <div class="col-6">
                                 <label class="text-white">Mot de passe:</label>
                                 <input type="password" name ="mdp" id="mdp" placeholder="&#9679;&#9679;&#9679;&#9679;&#9679;"> 
                             </div>
                         </div>
-                        <div class="form-group d-flex flex-row">
-                        
-                            <p>
+                        <div class="form-group row">
+                            <p class="col-6">
                                 <label class="text-white">Nom:</label>
                                 <input type="text" name ="nom" id="nom" placeholder="Nom">
                             </p>
-                            <p>
+                            <p class="col-6">
                                 <label class="text-white">Prénom:</label>
                                 <input type="text" name="prenom" id="prenom" placeholder="Prénom">
                             </p>
                             
                         </div>
-                        <div class="form-group d-flex flex-row">
+                        <div class="form-group row align-middle">
                             <p id="parAdresse">
                                 <label class="text-white">Adresse:</label>
-                                <input type="text" name ="adresse" id="adresse" placeholder="Adresse">
+                                <input class="col-8" coltype="text" name ="adresse" id="adresse" placeholder="Adresse">
                             </p>
                         </div>
-                        <div class="form-group d-flex flex-row">
-                            <p>
-                                <label class="text-white">Code postal:</label>
+                        <div class="form-group row">
+                            <p class="col-6">
+                                <label class="text-white ">Code postal:</label>
                                 <input type="text" name ="CP" id="CP" placeholder="Code Postal">
                             </p>
-                            <p>
+                            <p class="col-6 flex row">
                                 <label class="text-white">Ville:</label>
                                 <input type="text" name ="ville" id="ville" placeholder="Ville">
                             </p>
                         </div>
-                        <div class="form-group d-flex flex-row">
-                            <p >
-                                <label class="text-white mr-5">Date de naissance:</label>
+                        <div class="form-group row">
+                            <p class="col-6">
+                                <label class="text-white">Date de naissance:</label>
                                 <input type="date" name ="date" id="dateNaissance" placeholder="Date de naissance">
                             </p>
-                            <p>
+                            <p class="col-6">
                                 <label class="text-white">Role de l'utilisateur:</label>
                                 <select name="role" id="role">
                                     <option value="">Role de l'utilisateur</option>
