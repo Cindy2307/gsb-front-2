@@ -1,39 +1,17 @@
-header {
-    display: flex;
-    padding: 0.5%;
-    background-color: white;
-    align-items: center;
-    justify-content: space-between;
-}
-
 img {
     width: 10%;
-    height: 100%;
-}
-
-h1 {
-    width: 80%;
-    margin: 0;
-    text-align: center;
-    color: rgb(52, 122, 252);
 }
 
 #deconnexion:hover {
-    color:#dc3545 !important;
+    color: #dc3545 !important;
 }
+
 #connexion div {
-     
     padding-right: 10px;
     font-weight: bold;
-    
 }
 
-#deconnexion {
-    font-size: 30px;
-    color: rgb(52, 122, 252);
-    cursor: pointer;
-}
-
+#deconnexion,
 #logo {
     cursor: pointer;
 }
@@ -41,6 +19,6 @@ h1 {
 input:focus,
 textarea:focus,
 button:focus,
-select:focus{
+select:focus {
     outline: 0;
 }
