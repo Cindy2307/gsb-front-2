@@ -9,7 +9,7 @@ logo.addEventListener("click", (e) => {
 });
 
 async function createRapport() {
-    const url = `http://localhost:3000/gsb/visiteur/3/rapport`;
+    const url = `http://localhost:3000/gsb/visiteur/Benji/rapport`;
     let response = "";
     const formData = new FormData(form);
     let object = {};

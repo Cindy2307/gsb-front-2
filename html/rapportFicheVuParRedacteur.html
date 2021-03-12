@@ -12,22 +12,27 @@
     <link rel="stylesheet" href="../assets/css/rapportFicheVuParRedacteur.css">
 </head>
 <body>
-    <header>
-        <img src="../assets/img/logo-gsb.png" id="logo" alt="">
-        <h1>Galaxy Swiss Bourdin</h1>
-        <div id="connexion">
-            <p id="pseudo">Pseudo</p>
-            <i id="deconnexion" class="fas fa-sign-out-alt"></i>
+    <header class="d-flex justify-content-between align-items-center p-2 bg-white">
+        <img src="../assets/img/logo-gsb.png" id="logo" alt="logo">
+        <div class="d-flex justify-content-end align-items-center" id="connexion">
+            <div class="fs-5 mr-5 text-primary" id="pseudo">Pseudo</div>
+            <i id="deconnexion" class="fas fa-power-off fs-5 text-primary"></i>
         </div>
     </header>
-    <main>
-        <header>
-            <h2>Rapport</h2>
-        </header>
-        <div id="content">
-                <p>Date:<span id="date"></span></p>
-                <p>Bilan:<span id="bilan"></span</p>
-                <p>Motif:<span id="motif"></span></p>
+    <main class="mx-auto d-flex align-items-center">
+        <div class="container login-container ">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 login-form-1 center px-5 py-4">
+                    <h3 class="text-center text-white mb-5">Rapport</h3>
+                    <div>
+                        <p class="text-white">Date:<span id="date"></span></p>
+                        <p class="text-white">Bilan:<span id="bilan"></span</p>
+                        <p class="text-white">Motif:<span id="motif"></span></p>
+                    </div>
+                </div>
+                <div class="col-4"></div>
+            </div>
         </div>
     </main>
 

@@ -1,44 +1,23 @@
 body {
-    margin: 0;
     background: url(../img/fond.jpg);
     background-size: cover;
-    height: 100vh;
 }
 
 main {
-    width: 40%;
-    height: 75vh;
-    margin: 3% auto;
-}
-
-main header {
-    border-radius: 5px 5px 0 0;
-    display: flex;
-    justify-content: center;
-    padding: 1%;
-    background-color: rgb(52, 82, 252);
-    color: white;
-    border-radius: 5px 5px 0 0;
-}
-
-#content {
-    background-color: rgb(207, 207, 207);
-    padding: 5% 5%;
-    border-radius: 0 0 5px 5px;
-    height: fit-content;
-    border-radius: 0 0 5px 5px;
-
-}
-
-#content div {
     width: 80%;
-    margin: auto;
-    font-weight: bold;
+    height: 90vh;
 }
 
-#modifier,
-#supprimer {
+.login-form-1 {
+    background-color: rgba(0, 0, 0, 0.37);
+}
+
+button {
     width: 49%;
+}
+
+p {
+    font-weight: bold;
 }
 
 span {

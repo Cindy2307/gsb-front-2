@@ -26,7 +26,7 @@ rechercher.addEventListener("click", (e) => {
 });
 
 async function getRapportByVisiteurId() {
-    const url = `http://localhost:3000/gsb/visiteur/3/rapport`;
+    const url = `http://localhost:3000/gsb/visiteur/Benji/rapport`;
     let response = "";
 
     const responseJson = await fetch(url)

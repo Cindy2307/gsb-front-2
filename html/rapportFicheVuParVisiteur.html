@@ -12,27 +12,32 @@
     <link rel="stylesheet" href="../assets/css/rapportFicheVuParVisiteur.css">
 </head>
 <body>
-    <header>
+    <header class="d-flex justify-content-between align-items-center p-2 bg-white">
         <img src="../assets/img/logo-gsb.png" id="logo" alt="logo">
-        <h1>Galaxy Swiss Bourdin</h1>
-        <div id="connexion">
-            <p id="pseudo">Pseudo</p>
-            <i id="deconnexion" class="fas fa-sign-out-alt"></i>
+        <div class="d-flex justify-content-end align-items-center" id="connexion">
+            <div class="fs-5 mr-5 text-primary" id="pseudo">Pseudo</div>
+            <i id="deconnexion" class="fas fa-power-off fs-5 text-primary"></i>
         </div>
     </header>
-    <main>
-        <header>
-            <h2>Rapport</h2>
-        </header>
-        <div id="content">
-            <div>
-                <p>Date: <span id="date"></span></p>
-                <p>Motif: <span id="motif"></span></p>
-                <p>Bilan: <span id="bilan"></span></p>
-            </div>
-            <div>
-                <input type="button" id="modifier" value="Modifier">
-                <input type="button" id="supprimer" value="Supprimer"> 
+    <main class="mx-auto d-flex align-items-center">
+        <div class="container login-container ">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 login-form-1 center px-5 py-4">
+                    <h3 class="text-center text-white mb-5">Rapport</h3>
+                    <div>
+                        <p class="text-white">Date: <span id="date"></span></p>
+                        <p class="text-white">Motif: <span id="motif"></span></p>
+                        <p class="text-white">Bilan: <span id="bilan"></span></p>
+                    </div>
+                    <div class="form-group d-flex mt-4">
+                        <button id="modifier"
+                            class="d-block m-auto rounded-pill bg-transparent text-primary px-3 py-2 border-primary fs-5 ">Modifier</button>
+                        <button id="supprimer"
+                            class="d-block m-auto rounded-pill bg-transparent text-danger px-3 py-2 border-danger fs-5 ">Supprimer</button>
+                    </div>
+                </div>
+                <div class="col-4"></div>
             </div>
         </div>
     </main>
