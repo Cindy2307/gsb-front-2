@@ -12,41 +12,39 @@
     <link rel="stylesheet" href="../assets/css/utilisateurFiche.css">
 </head>
 <body>
-    <header>
-        <img src="../assets/img/logo-gsb.png" alt="">
-        <h1>Galaxy Swiss Bourdin</h1>
-        <div id="connexion">
-            <p id="pseudo">Pseudo</p>
-            <i id="deconnexion" class="fas fa-sign-out-alt"></i>
+    <header class="d-flex justify-content-between align-items-center p-2 bg-white">
+        <img src="../assets/img/logo-gsb.png" id="logo" alt="logo">
+        <div class="d-flex justify-content-end align-items-center" id="connexion">
+            <div class="fs-5 mr-5 text-primary" id="pseudo">Pseudo</div>
+            <i id="deconnexion" class="fas fa-power-off fs-5 text-primary"></i>
         </div>
     </header>
-    <main>
-        <header>
-            <h2>Utilisateur</h2>
-        </header>
-        <div id="content">
-            <div>
-                <p>Login:</p>
-                <p>Mot de passe:</p>
-            </div>
-            <div>
-                <p>Nom:</p>
-                <p>Prénom:</p>
-            </div>
-            <div>
-                <p id="parAdresse">Adresse:</p>
-            </div>
-            <div>
-                <p>Code postal:</p>
-                <p>Ville:</p>
-            </div>
-            <div>
-                <p>Date de naissance:</p>
-                <p>Role de l'utilisateur:</p>
-            </div>
-            <div>
-                <input type="button" id="modifier" value="Modifier">
-                <input type="button" id="supprimer" value="Supprimer"> 
+    <main class="mx-auto d-flex align-items-center">
+        <div class="container login-container ">
+            <div class="row">
+                <div class="col-4"></div>
+                <div class="col-4 login-form-1 center px-5 py-4">
+                    <h3 class="text-center text-white mb-5">Utilisateur</h3>
+                    <div>
+                        <p class="text-white">Login: <span id="login"></span></p>
+                        <p class="text-white">Mot de passe: <span id="password"></span></p>
+                        <p class="text-white">Nom: <span id="nom"></span></p>
+                        <p class="text-white">Prénom: <span id="prenom"></span></p>
+                        <p class="text-white">Adresse: <span id="adresse"></span></p>
+                        <p class="text-white">Code postal: <span id="cp"></span></p>
+                        <p class="text-white">Ville: <span id="ville"></span></p>
+                        <p class="text-white">Date de naissance: <span id="dateNaissance"></span></p>
+                        <p class="text-white">Date d'embauche: <span id="dateEmbauche"></span></p>
+                        <p class="text-white">Role de l'utilisateur: <span id="role"></span></p>
+                    </div>
+                    <div class="form-group d-flex mt-4">
+                        <button id="modifier"
+                            class="d-block m-auto rounded-pill bg-transparent text-primary px-3 py-2 border-primary fs-5 ">Modifier</button>
+                        <button id="supprimer"
+                            class="d-block m-auto rounded-pill bg-transparent text-danger px-3 py-2 border-danger fs-5 ">Supprimer</button>
+                    </div>
+                </div>
+                <div class="col-4"></div>
             </div>
         </div>
     </main>
