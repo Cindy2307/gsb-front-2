@@ -42,7 +42,7 @@ async function getRapportByVisiteurId() {
         document.querySelector("#labels").style.display = "none";
         rapports.insertAdjacentHTML("beforeend",
             `
-                <p id="aucunRapport"> Vous n'avez rédigé aucun rapport.</p>
+                <p id="aucunRapport" class="text-danger fs-1 mx-auto my-auto"> Vous n'avez rédigé aucun rapport.</p>
             `
         );
     } else {
@@ -60,17 +60,17 @@ async function getRapportByVisiteurId() {
                 `
                     <li>
                         <div class="card rapports${rapport.id}">
-                            <div class="card-body">
-                                <div class="conteneurInfos">
-                                    <div class="infos infos${rapport.id}">
+                            <div class="card-body d-flex justify-content-between py-0 px-1">
+                                <div class="conteneurInfos py-1 px-0">
+                                    <div class="infos infos${rapport.id} d-flex justify-content-between">
                                         <span>${date.getDate()}/${date.getMonth()}/${date.getFullYear()}</span>
                                         <span>${rapport.motif.substr(0, 20)}...</span>
                                         <span>${rapport.bilan.substr(0, 20)}...</span>
                                     </div>
                                 </div>
-                                <div class="boutons">    
-                                    <button class="modifier modifierRapport${rapport.id}"><i class="fas fa-pen"></i></button>
-                                    <button class="supprimer supprimerRapport${rapport.id}"><i class="fas fa-trash-alt"></i></button>
+                                <div class="boutons d_flex justify-content-end py-1 px-0">    
+                                    <button class="modifier modifierRapport${rapport.id} mr-2 text-primary"><i class="fas fa-pen"></i></button>
+                                    <button class="supprimer supprimerRapport${rapport.id} text-danger"><i class="fas fa-trash-alt"></i></button>
                                 </div>
                             </div>
                         </div>

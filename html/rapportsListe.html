@@ -21,25 +21,31 @@
             <i id="deconnexion" class="fas fa-power-off fs-5 text-primary"></i>
         </div>
     </header>
-    <main>
-        <header>
-            <button id="creer">Créer un rapport</button>
-            <h2>Rapports</h2>
-            <div id="RapportById">
-                <select name="idRapport" id="idRapport">
-                    <option value="">Rapport</option>
-                </select>
-                <i id="iconeRechercher" class="fas fa-search"></i>
-            </div>
-        </header>
-        <div id="content">
-            <div id="labels">
-                <p>Date</p>
-                <p>Motif</p>
-                <p>Bilan</p>
-            </div>
-            <div>
-                <ul id="rapports"></ul>
+    <main class="mx-auto d-flex align-items-center">
+        <div class="container login-container ">
+            <div class="row">
+                <div class="col-2"></div>
+                <div class="col-8 login-form-1 center px-0 py-4">
+                    <h3 class="text-center text-white mb-5">Rapports</h3>
+                    <div id="content">
+                        <div id="labels" class="d-flex justify-content-between px-1">
+                            <p class="text-white">Date</p>
+                            <p class="text-white">Motif</p>
+                            <p class="text-white">Bilan</p>
+                        </div>
+                        <div>
+                            <ul id="rapports" class="p-0 m-0"></ul>
+                        </div>
+                        <div class="form-group d-flex justify-content-evenly mt-4">
+                            <button id="creer"
+                                class="d-block rounded-pill bg-transparent text-primary px-3 py-2 border-primary fs-5 ">Créer un rapport</button>
+                            <select name="idRapport" id="idRapport" class="border-white rounded-pill bg-transparent text-white fs-6">
+                                <option value="">--Sélectionnez un rapport--</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2"></div>
             </div>
         </div>
     </main>

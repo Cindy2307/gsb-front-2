@@ -4,49 +4,18 @@ body {
 }
 
 main {
-    width: 80%;
-    height: 75vh;
-    margin: 3% auto;
+    width: 100%;
+    height: 90vh;
 }
 
-main header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    background-color: rgb(52, 82, 252);
-    color: white;
-    border-radius: 5px 5px 0 0;
-}
-
-#content {
-    background-color: rgb(207, 207, 207);
-    padding: 0.5%;
-    height: 65vh;
-    border-radius: 0 0 5px 5px;
-    overflow: auto;
-}
-
-#iconeRechercher {
-    font-size: 15px;
-    color: black;
-}
-
-button {
-    border: none;
+.login-form-1 {
+    background-color: rgba(0, 0, 0, 0.37);
+    height: 70vh;
 }
 
 #labels {
     font-weight: bold;
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
     width: 60%;
-    padding-left: 1%;
-}
-
-ul {
-    padding: 0;
-    margin: 0;
 }
 
 li {
@@ -55,14 +24,6 @@ li {
 
 .infos {
     width: 71%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-body {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 1%;
 }
 
 span {
@@ -74,28 +35,26 @@ span {
 .conteneurInfos {
     width: 90%;
     cursor: pointer;
-    padding: 1% 0;
 }
 
 .boutons {
     width: 10%;
-    display: flex;
-    justify-content: flex-end;
-    padding: 1% 0;
 }
 
-.modifier {
-    margin-right: 3%;
+button,
+select {
+    width: 30%;
 }
 
 #aucunRapport {
     width: fit-content;
-    margin: 3% auto 0 auto;
-    color: rgb(52, 82, 252);
-    font-size: 25px;
     font-weight: bold;
 }
 
-#iconeRechercher {
-    cursor: pointer;
+#idRapport {
+    border: 2px solid white;
+}
+
+#rapports {
+    height: 45vh;
 }
