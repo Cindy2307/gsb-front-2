@@ -24,50 +24,26 @@
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8 login-form-1 center px-0 py-4">
-                    <h3 class="text-center text-white mb-5">Rapports</h3>
+                    <h3 class="text-center text-white mb-5">Utilisateurs</h3>
                     <div id="content">
                         <div id="labels" class="d-flex justify-content-between px-1">
-                            <p class="text-white">Date</p>
-                            <p class="text-white">Motif</p>
-                            <p class="text-white">Bilan</p>
+                            <p class="text-white">Nom</p>
+                            <p class="text-white">Prenom</p>
+                            <p class="text-white">Role</p>
                         </div>
                         <div>
                             <ul id="rapports" class="p-0 m-0"></ul>
                         </div>
                         <div class="form-group d-flex justify-content-evenly mt-4">
-                            <div id="search">
-                                <input type="search" name="motCle" id="motCle" placeholder="Mot clé">
-                                <i id="iconeRechercher" class="fas fa-search text-white"></i>
-                            </div>
-                            <select name="idRapport" id="idRapport" class="border-white rounded-pill bg-transparent text-white fs-6">
-                                <option value="">--Sélectionnez un rapport--</option>
+                            <button id="creer"
+                                class="d-block rounded-pill bg-transparent text-primary px-3 py-2 border-primary fs-5 ">Créer un utilisateur</button>
+                            <select name="idUtilisateur" id="idUtilisateur" class="border-white rounded-pill bg-transparent text-white fs-6">
+                                <option value="">--Sélectionnez un utilisateur--</option>
                             </select>
                         </div>
                     </div>
                 </div>
                 <div class="col-2"></div>
-            </div>
-        </div>
-    </main>
-    <main>
-        <header>
-            <button id="creerUtilisateur">Créer un utilisateur</button>
-            <h2>Utilisateurs</h2>
-            <div id="visiteurById">
-                <select name="idUtilisateur" id="idUtilisateur">
-                    <option value="">Utilisateur</option>
-                </select>
-                <i id="iconeRechercher" class="fas fa-search"></i>
-            </div>
-        </header>
-        <div id="content">
-            <div id="labels">
-                <p>Nom</p>
-                <p>Prénom</p>
-                <p>Role</p>
-            </div>
-            <div>
-                <ul id="visiteurs"></ul>
             </div>
         </div>
     </main>
