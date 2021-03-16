@@ -14,17 +14,17 @@ main {
 }
 
 #labels {
+    display: flex;
     font-weight: bold;
     width: 60%;
 }
-
 
 li {
     list-style: none;
 }
 
 .infos {
-    width: 71%;
+    width: 68%;
 }
 
 span {
@@ -57,5 +57,10 @@ select {
 }
 
 #rapports {
-    height: 45vh;
+    height: 39vh;
+    overflow: auto;
+}
+
+.modifier, .supprimer{
+    border: none;
 }

@@ -1,7 +1,6 @@
 const rapports = document.querySelector("#rapports");
 const creer = document.querySelector("#creer");
 const liste = document.querySelector("#idRapport");
-const rechercher = document.querySelector("#iconeRechercher");
 const logo = document.querySelector("#logo");
 let rapportId;
 
@@ -15,18 +14,18 @@ logo.addEventListener("click", (e) => {
     document.location.href = "../html/rapportsListe.html";
 });
 
-rechercher.addEventListener("click", (e) => {
-    e.preventDefault();
-    if (liste.value === "") {
-        alert("Vous devez sélectionner un rapport.");
-    } else {
-        sessionStorage.setItem("rapportId", liste.value);
-        document.location.href = "../html/rapportFicheVuParVisiteur.html";
-    }
-});
+// rechercher.addEventListener("click", (e) => {
+//     e.preventDefault();
+//     if (liste.value === "") {
+//         alert("Vous devez sélectionner un rapport.");
+//     } else {
+//         sessionStorage.setItem("rapportId", liste.value);
+//         document.location.href = "../html/rapportFicheVuParVisiteur.html";
+//     }
+// });
 
 async function getRapportByVisiteurId() {
-    const url = `http://localhost:3000/gsb/visiteur/Benji/rapport`;
+    const url = `http://localhost:3000/gsb/visiteur/3/rapport`;
     let response = "";
 
     const responseJson = await fetch(url)
@@ -40,9 +39,10 @@ async function getRapportByVisiteurId() {
 
     if (response.length === 0) {
         document.querySelector("#labels").style.display = "none";
+        document.querySelector("#idRapport").style.display = "none";
         rapports.insertAdjacentHTML("beforeend",
             `
-                <p id="aucunRapport" class="text-danger fs-1 mx-auto my-auto"> Vous n'avez rédigé aucun rapport.</p>
+                <p id="aucunRapport" class="text-danger fs-5 mx-auto my-auto"> Vous n'avez rédigé aucun rapport.</p>
             `
         );
     } else {
@@ -69,8 +69,8 @@ async function getRapportByVisiteurId() {
                                     </div>
                                 </div>
                                 <div class="boutons d_flex justify-content-end py-1 px-0">    
-                                    <button class="modifier modifierRapport${rapport.id} mr-2 text-primary"><i class="fas fa-pen"></i></button>
-                                    <button class="supprimer supprimerRapport${rapport.id} text-danger"><i class="fas fa-trash-alt"></i></button>
+                                    <button class="modifier modifierRapport${rapport.id} mr-2 text-primary bg-white"><i class="fas fa-pen"></i></button>
+                                    <button class="supprimer supprimerRapport${rapport.id} text-danger bg-white"><i class="fas fa-trash-alt"></i></button>
                                 </div>
                             </div>
                         </div>

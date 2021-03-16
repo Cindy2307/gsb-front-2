@@ -22,8 +22,8 @@ async function getRapports() {
             `
                     <li>
                         <div class="card rapport${rapport.id}">
-                            <div class="card-body">
-                                <div class="infos infos${rapport.id}">
+                            <div class="card-body d-flex justify-content-between py-1 px-1">
+                                <div class="infos infos${rapport.id} d-flex justify-content-between">
                                     <span>${date.getDate()}/${date.getMonth()}/${date.getFullYear()}</span>
                                     <span>${rapport.motif.substr(0, 20)}...</span>
                                     <span>${rapport.bilan.substr(0, 20)}...</span>

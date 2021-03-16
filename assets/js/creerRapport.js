@@ -9,12 +9,12 @@ logo.addEventListener("click", (e) => {
 });
 
 async function createRapport() {
-    const url = `http://localhost:3000/gsb/visiteur/Benji/rapport`;
+    const url = `http://localhost:3000/gsb/visiteur/3/rapport`;
     let response = "";
     const formData = new FormData(form);
     let object = {};
 
-    formData.forEach(function(value, key){
+    formData.forEach(function (value, key) {
         object[key] = value;
     });
 
