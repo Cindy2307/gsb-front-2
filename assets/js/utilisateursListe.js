@@ -20,13 +20,15 @@ async function getVisiteurs() {
             `
                     <li>
                         <div class="card visiteur${visiteur.id}">
-                            <div class="card-body">
-                                <div class="infos${visiteur.id}">
-                                    ${visiteur.nom}<br>
+                            <div class="card-body d-flex justify-content-between py-0 px-1">
+                                <div class="conteneurInfos py-1 px-0">
+                                    <div class="infos infos${visiteur.id}">
+                                        ${visiteur.nom}<br>
+                                    </div>
                                 </div>
-                                <div class="boutons">    
-                                    <button class="modifier modifierVisiteur${visiteur.id}"><i class="fas fa-pen"></i></button>
-                                    <button class="supprimer supprimerVisiteur${visiteur.id}"><i class="fas fa-trash-alt"></i></button>
+                                <div class="boutons d_flex justify-content-end py-1 px-0">    
+                                    <button class="modifier modifierVisiteur${visiteur.id} mr-2 text-primary bg-white"><i class="fas fa-pen"></i></button>
+                                    <button class="supprimer supprimerVisiteur${visiteur.id} text-danger bg-white"><i class="fas fa-trash-alt"></i></button>
                                 </div>
                             </div>
                         </div>

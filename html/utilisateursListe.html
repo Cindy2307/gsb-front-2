@@ -1,16 +1,18 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GSB</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
     <link rel="stylesheet" href="../assets/css/header.css">
     <link rel="stylesheet" href="../assets/css/utilisateursListe.css">
 </head>
+
 <body>
     <header class="d-flex justify-content-between align-items-center p-2 bg-white">
         <img src="../assets/img/logo-gsb.png" id="logo" alt="logo">
@@ -24,20 +26,22 @@
             <div class="row">
                 <div class="col-2"></div>
                 <div class="col-8 login-form-1 center px-0 py-4">
-                    <h3 class="text-center text-white mb-5">Utilisateurs</h3>
+                    <h3 class="text-center text-white mb-4">Utilisateurs</h3>
                     <div id="content">
-                        <div id="labels" class="d-flex justify-content-between px-1">
+                        <div id="labels" class="justify-content-between px-1">
                             <p class="text-white">Nom</p>
                             <p class="text-white">Prenom</p>
                             <p class="text-white">Role</p>
                         </div>
                         <div>
-                            <ul id="rapports" class="p-0 m-0"></ul>
+                            <ul id="visiteurs" class="p-0 m-0"></ul>
                         </div>
-                        <div class="form-group d-flex justify-content-evenly mt-4">
+                        <div class="form-group d-flex justify-content-evenly mt-3">
                             <button id="creer"
-                                class="d-block rounded-pill bg-transparent text-primary px-3 py-2 border-primary fs-5 ">Créer un utilisateur</button>
-                            <select name="idUtilisateur" id="idUtilisateur" class="border-white rounded-pill bg-transparent text-white fs-6">
+                                class="d-block rounded-pill bg-transparent text-primary px-3 py-2 border-primary fs-5 ">Créer
+                                un utilisateur</button>
+                            <select name="idUtilisateur" id="idUtilisateur"
+                                class="border-white rounded-pill bg-transparent text-white fs-6">
                                 <option value="">--Sélectionnez un utilisateur--</option>
                             </select>
                         </div>
@@ -49,4 +53,5 @@
     </main>
     <script src="../assets/js/utilisateursListe.js"></script>
 </body>
+
 </html>

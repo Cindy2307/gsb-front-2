@@ -13,4 +13,50 @@ main {
     height: 70vh;
 }
 
+#labels {
+    display: flex;
+    font-weight: bold;
+    width: 60%;
+}
+
+li {
+    list-style: none;
+}
+
+.infos {
+    width: 71%;
+}
+
+span {
+    width: 20%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.conteneurInfos {
+    width: 90%;
+    cursor: pointer;
+}
+
+.boutons {
+    width: 10%;
+}
+
+button,
+select {
+    width: 30%;
+}
+
+#idUtilisateur {
+    border: 2px solid white;
+}
+
+#visiteurs {
+    height: 39vh;
+    overflow: auto;
+}
+
+.modifier, .supprimer{
+    border: none;
+}
 
