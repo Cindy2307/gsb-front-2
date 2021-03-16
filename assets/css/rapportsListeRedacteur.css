@@ -1,55 +1,23 @@
 body {
-    margin: 0;
     background: url(../img/fond.jpg);
     background-size: cover;
-    height: 100vh;
 }
 
 main {
-    width: 80%;
-    height: 75vh;
-    margin: 3% auto;
+    width: 100%;
+    height: 90vh;
 }
 
-main header {
-    display: flex;
-    justify-content: space-between;
-    padding: 1%;
-    background-color: rgb(52, 82, 252);
-    color: white;
-    border-radius: 5px 5px 0 0;
-}
-
-#content {
-    background-color: rgb(207, 207, 207);
-    padding: 0.5%;
-    height: 65vh;
-    border-radius: 0 0 5px 5px;
-    overflow: auto;
-}
-
-#iconeRechercher {
-    font-size: 15px;
-    color: black;
-}
-
-button {
-    border: none;
+.login-form-1 {
+    background-color: rgba(0, 0, 0, 0.37);
+    height: 70vh;
 }
 
 #labels {
     font-weight: bold;
-    font-size: 16px;
-    display: flex;
-    justify-content: space-between;
     width: 60%;
-    padding-left: 1%;
 }
 
-ul {
-    padding: 0;
-    margin: 0;
-}
 
 li {
     list-style: none;
@@ -57,17 +25,37 @@ li {
 
 .infos {
     width: 71%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.card-body {
-    display: flex;
-    justify-content: space-between;
 }
 
 span {
     width: 20%;
     white-space: nowrap;
     overflow: hidden;
+}
+
+.conteneurInfos {
+    width: 90%;
+    cursor: pointer;
+}
+
+.boutons {
+    width: 10%;
+}
+
+button,
+select {
+    width: 30%;
+}
+
+#aucunRapport {
+    width: fit-content;
+    font-weight: bold;
+}
+
+#idRapport {
+    border: 2px solid white;
+}
+
+#rapports {
+    height: 45vh;
 }
