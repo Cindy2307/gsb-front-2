@@ -2,7 +2,6 @@ const nom = document.querySelector("#nom");
 const creer = document.querySelector("#creer");
 const form = document.querySelector("form");
 const logo = document.querySelector("#logo");
-console.log(form)
 logo.addEventListener("click", (e) => {
     e.preventDefault();
     document.location.href = "../html/utilisateursListe.html";
@@ -14,7 +13,7 @@ async function createUtilisateur() {
     const formData = new FormData(form);
     let object = {};
 
-    formData.forEach(function(value, key){
+    formData.forEach(function (value, key) {
         object[key] = value;
     });
 
