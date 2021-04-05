@@ -3,7 +3,7 @@ let visiteurDelete = "";
 let updateId = "";
 
 async function getVisiteurs() {
-    const url = 'http://localhost:3000/gsb/visiteur';
+    const url = 'http://localhost:3002/gsb/visiteur';
     let response = "";
 
     const responseJson = await fetch(url)

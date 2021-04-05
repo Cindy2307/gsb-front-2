@@ -1,24 +1,4 @@
 const connexion = document.querySelector("#connexion");
-// connexion.addEventListener("click", (e) => {
-//     e.preventDefault();
-    
-// });
-// var myHeaders = new Headers();
-// myHeaders.append("Authorization", "Basic Q29jbzQ6Y291Y291NA==");
-// myHeaders.append("Content-Type", "application/json");
-// myHeaders.append("Cookie", "JSESSIONID=8DE2D6B332466F5F537E6C0802649E12");
-
-// var requestOptions = {
-//     method: 'GET',
-//     headers: myHeaders,
-//     body: raw,
-//     redirect: 'follow'
-//   };
-  
-//   fetch("localhost:3002/gsb/visiteur", requestOptions)
-//     .then(response => response.text())
-//     .then(result => console.log(result))
-//     .catch(error => console.log('error', error));
 
 async function login() {
 
@@ -26,8 +6,6 @@ async function login() {
     const password = document.querySelector("#password").value;
     
     const credential = window.btoa(login + ":" + password);
-    alert(login+password)
-    console.log(credential);
     const url = "http://localhost:3002/gsb/login";
     let response = "";
 
@@ -44,7 +22,17 @@ async function login() {
 
     if (responseJson.status === 200) {
         response = await responseJson.json();
-        console.log(response);
+        switch (response.role) {
+            case "VIS":
+                location.href = "../../html/rapportsListe.html";
+                break;
+            case "RC":
+                location.href = "../../html/rapportsListeRedacteur.html";
+                break;
+            case "RH":
+                location.href = "../../html/utilisateursListe.html";
+                break;
+        }
     }
 }
 
